@@ -4,8 +4,8 @@
   "version": "1.6.6",
   "author": "Ushakov",
   "scripts": {
-    "dev": "webpack-dev-server --open --hot",
-    "build": "webpack --progress --hide-modules"
+    "dev": "webpack-dev-server --host $IP --port $PORT --disable-host-check",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
     "api-ai-javascript": "^2.0.0-beta.21",
